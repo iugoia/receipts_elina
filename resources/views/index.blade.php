@@ -182,7 +182,7 @@
                                 <img src="{{ asset('img/cuisines/' . $item->photo) }}" alt="{{ $item->name }}">
                             </a>
                             <a href="{{ route('cuisine.show', $item) }}" class="kitchen_description">
-                                <p>{{ $item->description }}</p>
+                                <p>{!! $item->description !!}</p>
                             </a>
                             <a href="{{ route('cuisine.show', $item) }}" class="kitchen_link"></a>
                         </div>

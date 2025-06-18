@@ -22,7 +22,7 @@
         <div class="container">
             <h1>{{ $cuisine->name }}</h1>
             <p class="cuisine_desc">
-                {{ $cuisine->description }}
+                {{ strip_tags($cuisine->description) }}
             </p>
         </div>
     </section>
